@@ -4,6 +4,8 @@ import sqlite3
 import time
 import re
 
+os.chdir("~/uncoolstars")
+
 token = os.environ["uncoolstars"]
 graph = GraphAPI(token)
 
