@@ -4,8 +4,12 @@ import sqlite3
 import time
 import re
 
+<<<<<<< HEAD
 home = os.environ["HOME"]
 os.chdir(home + "/uncoolstars")
+=======
+os.chdir("~/uncoolstars")
+>>>>>>> d67b7d3885fdff96d7a998a44649e23f622d764a
 
 token = os.environ["uncoolstars"]
 graph = GraphAPI(token)
