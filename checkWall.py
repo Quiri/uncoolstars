@@ -5,6 +5,8 @@ parser = argparse.ArgumentParser(description = "Infinite loop to check feeds and
 parser.add_argument('interval', metavar = 'N', type = int, help = "Seconds between interation", nargs = "?", default = 300)
 args = parser.parse_args()
 
+print "I'm here"
+
 while(True):
     addFromFeed()
     time.sleep(args.interval)
