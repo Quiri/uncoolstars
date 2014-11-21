@@ -92,7 +92,8 @@ def addFromFeed():
                         graph.post(path=post["id"]+"/comments", message=fromfb)
                         print "Request not valid " + post["message"]
                     else:
-                        newstar = not isStarinDB(star)
+                        star = fromfb["username"] # Fixes Bug 1
+			newstar = not isStarinDB(star)
                         ins = [post["id"], post["message"], post["from"]["id"], post["from"]["name"], post["created_time"], time.strftime("%c"), newstar]
 
                         c = conn.cursor()

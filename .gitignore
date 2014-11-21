@@ -2,3 +2,5 @@ uncoolstars.db
 *.swp
 *.pyc
 logfile.log
+date22.log date.log feedwatch.log logfile.log
+*.log
