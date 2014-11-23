@@ -1,7 +1,7 @@
-echo ----------------------------------------------------------
-echo "Updating data" `date`
+#!/bin/bash
+echo ---------------------------------------------------------- &>> update.log
+echo "Updating data" `date` &>> update.log
 cd ~/uncoolstars
-python updatedata.py
-echo "Successfully updated" `date`
+python updatedata.py &>> update.log
+echo "Successfully updated" `date` &>> update.log
 cd -
-echo ----------------------------------------------------------
